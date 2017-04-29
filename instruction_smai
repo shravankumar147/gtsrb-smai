@@ -1,0 +1,17 @@
+Students whose projects were attached to me, we'll not be having a traditional face to face evaluation, instead please send the github/bitbucket link for your project with a comprehensive README. It'll be better if the teams could share the version controlled repository so that I can take the commit progress into account.
+
+What should the README contain?
+
+1. A brief outline of the structure of the code.
+
+2. Instructions for setting up and running the code. (Adding a nice demo file is recommended.)
+
+3. Any specifics that may be important to discuss regarding the codebase.
+
+4. Also, specific list of files that your team has written on your own or substantially modified, along with the list of repositories from where you have taken code from. 
+
+5. If there are any hyperparameters that you had to tune and preliminary or otherwise results to display, please add them in RESULTS.txt. A discussion of the same will be a bonus, but not necessary.
+
+6. It's also recommended that you add all the table/graph making code (that you might have used for slides) to the codebase in a subfolder, say "report".
+
+Please do the above by 1st latest.
