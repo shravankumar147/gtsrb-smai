@@ -6,6 +6,8 @@
 *.exe
 *.o
 *.so
+*.npy
+*.pkl
 
 # Packages #
 ############
@@ -39,3 +41,4 @@ Thumbs.db
 # directories #
 #################
 clf/
+HoGFeatures/
