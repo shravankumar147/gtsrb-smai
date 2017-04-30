@@ -12,7 +12,7 @@ challenging pattern recognition problem.
 * Version
 
   1.0.1
-* [Content and Code](https://bitbucket.org/tutorials/markdowndemo)
+* [Content and Code](https://github.com/shravankumar147/gtsrb-smai/wiki)
   Please look at wiki pages to see code and results
 
 ### How do I get set up? ###
