@@ -87,11 +87,3 @@ clf.fit(imageFeatures, np.array(imageClassesAll))
 # Save SVM
 
 joblib.dump((clf, trainingNames, stdScaler, k, voc), "bagOfFeatures_rf.pkl", compress = 3)
-
-
-
-
-
-
-
-
