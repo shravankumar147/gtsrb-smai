@@ -6,12 +6,11 @@ import pdb
 import numpy as np
 import os
 from sklearn.svm import LinearSVC
-from sklearn.neural_network import MLPClassifier
 from sklearn.externals import joblib
 from scipy.cluster.vq import *
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
-
+from sklearn.model_selection import cross_val_score
 
 # create feature extractor and keypoint detector objects
 
@@ -79,12 +78,15 @@ imageFeatures = stdScaler.transform(imageFeatures)
 
 # Train a Linear SVM
 
-clf = MLPClassifier(hidden_layer_sizes=(200,))
-clf.fit(imageFeatures, np.array(imageClassesAll))
+clf = LinearSVC()
+# clf.fit(imageFeatures, np.array(imageClassesAll))
+accuracies  = cross_val_score(clf, imageFeatures, imageClassesAll[:,0])
+print("mean cross-validation score: {}".format(np.mean(accuracies)))
+
 
 # Save SVM
 
-joblib.dump((clf, trainingNames, stdScaler, k, voc), "bagOfFeatures_MLP.pkl", compress = 3)
+joblib.dump((clf, trainingNames, stdScaler, k, voc), "bagOfFeatures_SVM.pkl", compress = 3)
 
 
 

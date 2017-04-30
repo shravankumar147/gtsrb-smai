@@ -1,19 +1,18 @@
 
-
 # import argparse as ap
 import cv2
 import utils 
 import pdb
 import numpy as np
 import os
-# from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-# from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import LinearSVC
+from sklearn.neural_network import MLPClassifier
 from sklearn.externals import joblib
 from scipy.cluster.vq import *
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
-
+from sklearn.model_selection import cross_val_score
 
 # create feature extractor and keypoint detector objects
 
@@ -81,12 +80,16 @@ imageFeatures = stdScaler.transform(imageFeatures)
 
 # Train a Linear SVM
 
-clf =  DecisionTreeClassifier(random_state=0)
-clf.fit(imageFeatures, np.array(imageClassesAll))
+clf =  KNeighborsClassifier(n_neighbors=3)
+# clf.fit(imageFeatures, np.array(imageClassesAll))
+accuracies  = cross_val_score(clf, imageFeatures, imageClassesAll[:,0])
+print("mean cross-validation score: {}".format(np.mean(accuracies)))
+
+
 
 # Save SVM
 
-joblib.dump((clf, trainingNames, stdScaler, k, voc), "bagOfFeatures_decisiontree.pkl", compress = 3)
+joblib.dump((clf, trainingNames, stdScaler, k, voc), "bagOfFeatures_KNN.pkl", compress = 3)
 
 
 
