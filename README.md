@@ -1,8 +1,6 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
+### [GTSRB](http://benchmark.ini.rub.de/?section=gtsrb&subsection=news) ###
 
 * Quick summary
 
@@ -15,6 +13,7 @@ challenging pattern recognition problem.
 
   1.0.1
 * [Content and Code](https://bitbucket.org/tutorials/markdowndemo)
+  Please look at wiki pages to see code and results
 
 ### How do I get set up? ###
 
