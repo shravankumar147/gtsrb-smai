@@ -12,7 +12,7 @@ from sklearn.externals import joblib
 from scipy.cluster.vq import *
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
-
+from sklearn.model_selection import cross_val_score
 
 # create feature extractor and keypoint detector objects
 
@@ -81,7 +81,11 @@ imageFeatures = stdScaler.transform(imageFeatures)
 # Train a Linear SVM
 
 clf =  KNeighborsClassifier(n_neighbors=3)
-clf.fit(imageFeatures, np.array(imageClassesAll))
+# clf.fit(imageFeatures, np.array(imageClassesAll))
+accuracies  = cross_val_score(clf, imageFeatures, imageClassesAll[:,0])
+print("mean cross-validation score: {}".format(np.mean(accuracies)))
+
+
 
 # Save SVM
 

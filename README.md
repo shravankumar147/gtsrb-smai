@@ -8,6 +8,9 @@
 
     We have explored different classifcation algorithms on shallow features(HoG, SIFT) to find a best classifier atleast to reach near human accuracy.
 
+    Presentation [here](https://docs.google.com/presentation/d/1-WdLwKJzpL4ukYYuFl3g2TMUACUIbfdz0aWkfzQP7ZI/edit?usp=sharing)
+    
+
 * Version
 
   1.0.1
@@ -31,7 +34,7 @@
   
 * Dependencies
 
-   pip install -r requirements.txt
+   ``` pip install -r requirements.txt ``` 
    
    We have used anaconda python.  
 * Database configuration
