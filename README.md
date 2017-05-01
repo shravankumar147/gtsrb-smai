@@ -34,7 +34,7 @@
   
 * Dependencies
 
-   pip install -r requirements.txt
+   ``` pip install -r requirements.txt ``` 
    
    We have used anaconda python.  
 * Database configuration
