@@ -4,11 +4,11 @@
 
 # Quick summary
 
-    Traffic signs are characterized by a wide variability in their visual appearance in real-world environments. For example, changes of illumination, varying weather conditions and partial occlusions impact the perception of road signs. In practice, a large number of different sign classes needs to be recognized with very high accuracy. Traffic signs have been designed to be easily readable for humans, who perform very well at this task. For computer systems, however, classifying traffic signs still seems to pose a challenging pattern recognition problem.
+Traffic signs are characterized by a wide variability in their visual appearance in real-world environments. For example, changes of illumination, varying weather conditions and partial occlusions impact the perception of road signs. In practice, a large number of different sign classes needs to be recognized with very high accuracy. Traffic signs have been designed to be easily readable for humans, who perform very well at this task. For computer systems, however, classifying traffic signs still seems to pose a challenging pattern recognition problem.
 
-    We have explored different classifcation algorithms on shallow features(HoG, SIFT) to find a best classifier atleast to reach near human accuracy.
+We have explored different classifcation algorithms on shallow features(HoG, SIFT) to find a best classifier atleast to reach near human accuracy.
 
-    Presentation [here](https://docs.google.com/presentation/d/1-WdLwKJzpL4ukYYuFl3g2TMUACUIbfdz0aWkfzQP7ZI/edit?usp=sharing)
+Presentation [here](https://docs.google.com/presentation/d/1-WdLwKJzpL4ukYYuFl3g2TMUACUIbfdz0aWkfzQP7ZI/edit?usp=sharing)
     
 
 * Version
